@@ -1,31 +1,31 @@
-.login{
+.login {
   height: 44px;
   width: 1189px;
 }
 
-.login > a{
+.login > a {
   text-decoration: none;
   font-size: 16px;
   font-weight: bolder;
 }
 
-.login > a:link{
+.login > a:link {
   color: black;
 }
 
-.login > a:visited{
+.login > a:visited {
   color: black;
 }
 
-.topbar{
+.topbar {
 }
 
-.topbar > a img{
+.topbar > a img {
   width: 134px;
   height: 36px;
 }
 
-.topbar > a{
+.topbar > a {
   font-size: 20px;
   text-align: center;
   text-decoration: none;
@@ -34,56 +34,79 @@
   font-weight: bold;
 }
 
-.topbar > a:link{
-  color:black;
-}
-.topbar > a:visited{
+.topbar > a:link {
   color: black;
 }
 
-.search > input{
+.topbar > a:visited {
+  color: black;
+}
+
+.search > input {
   width: 348px;
   height: 24px;
 }
 
-.search > button img{
+.search > button img {
   width: 24px;
   height: 24px;
 }
 
-.ilust_main{
+.ilust_main {
   margin-top: 50px;
   position: relative;
-  left:300px;
+  left: 300px;
   z-index: -1;
 }
 
-.logo_main_right{
+.logo_main_right {
   position: relative;
   z-index: 1;
-  left : 200px;
+  left: 200px;
   top: -600px;
 }
 
-.footer{
+.footer {
   margin-top: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-right: 250px;
+  padding-left: 250px;
   background: black;
   width: 100%;
-  height: 300px;
+  height: 200px;
 }
 
-.about > a{
+.about{
+  margin-top: 70px;
+}
+
+.about > ul li{
+  display: inline;
+}
+
+.about > ul li a{
   text-decoration: none;
 }
 
-.about > a:link{
+.about > ul li a:link{
   color: white;
 }
 
-.about > a:visited{
+.about > ul li a:visited{
   color: white;
 }
 
-.copyright > a{
+.copyright{
+  margin-top: 25px;
+}
+
+.copyright{
   color: white;
+}
+
+.getapp{
+  position: relative;
+  top: -200px;
+  left: 55%;
 }
