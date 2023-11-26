@@ -1,0 +1,29 @@
+.head > img{
+  margin-top: 30px;
+  margin-left: 60px;
+}
+
+.body{
+  text-align: center;
+}
+
+input{
+  width: 270px;
+  height: 30px;
+}
+
+p{
+  font-weight: bold;
+}
+
+.find > a{
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.find > a:link{
+  color: black;
+}
+.find > a:visited{
+  color: black;
+}

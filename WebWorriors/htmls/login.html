@@ -1,10 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
   <meta charset="UTF-8">
   <title>Login</title>
+  <style type="text/css">@import url(../csss/login.css);</style>
 </head>
 <body>
-
+<header class="head">
+  <img src="../img/logo.png" alt="logo.png">
+</header>
+<section class="body">
+  <p class="title">로그인</p>
+  <hr>
+  <div class="inputs">
+    <p style="margin-right: 230px">아이디</p>
+    <p><input type="text" class="input_id2" required placeholder="아이디"></p>
+    <p style="margin-right: 210px">비밀번호</p>
+    <p><input type="password" class="input_pwd" required placeholder="비밀번호"></p>
+    <p style="margin-right: 170px"><input type="checkbox" style="width: 13px; height: 13px"> 아이디 저장</p>
+    <p><button style="width: 270px; height: 40px">로그인</button></p>
+    <p class="find">
+      <a href="#">아이디 찾기</a>
+      <a>/</a>
+      <a href="#">비밀번호 재설정</a>
+      <a>/</a>
+      <a href="#">회원가입</a>
+    </p>
+  </div>
+</section>
 </body>
 </html>

@@ -3,52 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <title>Register</title>
+  <style type="text/css">@import url(../csss/login.css);</style>
 </head>
 <body>
 <header class="head">
-<img src="../img/logo.png" alt="logo.png">
+  <img src="../img/logo.png" alt="logo.png">
 </header>
 <section class="body">
-<header>
-  회원가입
+  <p class="title">회원가입</p>
   <hr>
-</header>
-  <section>
-    <ul class="inputs" type="none">
-      <li>
-        <p>아이디</p>
-        <input type="text" class="input_id" required placeholder="4~20자리/영문, 숫자, 특수문자 '_'사용 가능">
-      </li>
-      <li>
-        <p>비밀번호</p>
-        <input type="password" class="input_pwd" required placeholder="4~16자리/영문, 숫자, 특수문자 '_'사용 가능">
-      </li>
-      <li>
-        <p>이름</p>
-        <input type="text" class="input_name" required placeholder="이름 입력">
-      </li>
-      <li>
-        <p>생년월일</p>
-        <input type="text" class="input_birth" required placeholder="YYYYMMDD">
-      </li>
-      <li>
-        <p>휴대폰</p>
-        <input type="text" class="input_phone" required placeholder="'-'빼고 숫자만 입력'">
-        <button>인증요청</button>
-      </li>
-      <li>
-        <p>이메일</p>
-        <input type="text" class="input_mail" required placeholder="example@email.com">
-      </li>
-      <li>
-        <p>약관</p>
+  <div class="inputs">
+    <p style="margin-right: 230px">아이디</p>
+    <p><input type="text" class="input_id" required placeholder="4~20자리/영문, 숫자, 특수문자 '_'사용 가능"></p>
+    <p style="margin-right: 210px">비밀번호</p>
+    <p><input type="password" class="input_pwd" required placeholder="4~16자리/영문, 숫자, 특수문자 '_'사용 가능"></p>
+    <p style="margin-right: 250px">이름</p>
+    <p><input type="text" class="input_name" required placeholder="이름 입력"></p>
+    <p style="margin-right: 210px">생년월일</p>
+    <p><input type="text" class="input_birth" required placeholder="YYYYMMDD"></p>
+    <p style="margin-right: 230px">휴대폰</p>
+    <p>
+      <input style="width: 195px" type="text" class="input_phone" required placeholder="'-'빼고 숫자만 입력'">
+      <button style="height: 35px">인증요청</button>
+    </p>
+    <p style="margin-right: 230px">이메일</p>
+    <p><input type="text" class="input_mail" required placeholder="example@email.com"></p>
+    <p style="margin-right: 250px">약관</p>
 
-      </li>
-      <li style="margin-top: 50px">
-        <button>가입완료</button>
-      </li>
-    </ul>
-  </section>
+    <p style="margin-top: 50px">
+      <button style="width: 270px; height: 40px">가입완료</button>
+    </p>
+  </div>
 </section>
 </body>
 </html>
