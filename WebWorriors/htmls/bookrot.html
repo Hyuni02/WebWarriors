@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Title</title>
   <style type="text/css">@import url("../csss/bookrot.css");</style>
+  <script src="../jss/main.js"></script>
 </head>
 <body>
 <div>
@@ -50,7 +51,10 @@
 </div>
 
 <div style="text-align: center">
-  <button style="border-radius: 20px; background-color: blue; color:white; border:none; width: 100px; height: 40px">
+  <button onclick="
+  purchase(document.getElementById('slide01'),
+  document.getElementById('slide02'),
+  document.getElementById('slide03'))" style="border-radius: 20px; border:none; width: 100px; height: 40px">
     구매하기
   </button>
 </div>

@@ -27,3 +27,13 @@ p{
 .find > a:visited{
   color: black;
 }
+
+button{
+  background-color: blue;
+  color: white;
+}
+
+button:hover{
+  background-color: cyan;
+  color: black;
+}

@@ -27,14 +27,24 @@
     <p style="margin-right: 230px">휴대폰</p>
     <p>
       <input style="width: 195px" type="text" id="_phonenum"  class="input_phone" required placeholder="'-'빼고 숫자만 입력'">
-      <button onclick="phonecheck()" style="height: 35px">인증요청</button>
+      <button onclick="phonecheck()" style="color: gray; background-color: lightgray; height: 35px">인증요청</button>
     </p>
     <p style="margin-right: 230px">이메일</p>
     <p><input type="text" id="_email" class="input_mail" required placeholder="example@email.com"></p>
     <p style="margin-right: 250px">약관</p>
-
+    <p>
+      <iframe id="_prov" src="provision.html" height="120px" style="margin-left: 30px; margin-right: 20px; width: 290px; border-color: lightslategray; border-width: 1px">
+        iframe 미지원 브라우저입니다.
+      </iframe>
+    </p>
     <p style="margin-top: 50px">
-      <button onclick="register(document.getElementById('_id').value, document.getElementById('_pwd').value,document.getElementById('_name').value, document.getElementById('_birth').value, document.getElementById('_phonenum').value, document.getElementById('_email').value)" style="width: 270px; height: 40px">가입완료</button>
+      <button onclick="register(document.getElementById('_id').value,
+      document.getElementById('_pwd').value,
+      document.getElementById('_name').value,
+      document.getElementById('_birth').value,
+      document.getElementById('_phonenum').value,
+      document.getElementById('_email').value)"
+      style="margin-left: 10px; width: 290px; border-radius: 10px;border:none; height: 40px">가입완료</button>
     </p>
   </div>
 </section>
