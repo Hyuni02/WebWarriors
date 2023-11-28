@@ -7,7 +7,7 @@ function service(){
 }
 
 function search(title) {
-  alert(title)
+  alert("미구현" + title)
 }
 
 function purchase(s1, s2, s3){
