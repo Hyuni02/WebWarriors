@@ -15,8 +15,9 @@ body{
             padding-left:310px;
             padding-right:310px;
     }
-.main{
-    width: ;
+.main {
+  /*width: ;*/
+}
 .img{
     witdh:565px;
     height:725.37px;
@@ -28,7 +29,7 @@ body{
 }
 .introduce{
     width:1300px;
-    height:200ox;
+    height:200px;
 }
 .login {
   height: 44px;
@@ -147,7 +148,7 @@ body{
   background-color: skyblue;
   color: white;
   border: none;
-  
+
   border-radius: 20px 30px;
 }
 .form > div{witdh:30px;height: 20px;
