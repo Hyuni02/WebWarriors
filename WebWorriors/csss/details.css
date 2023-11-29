@@ -5,7 +5,11 @@
     font-weight: 400;
     font-style: normal;
 }
+html{
+  width: 1920px;
+}
 body{
+    
     font-family:'Pretendard-Regular';
     padding-left:310px;
     padding-right:310px;
@@ -19,12 +23,12 @@ body{
   /*width: ;*/
 }
 .img{
-    witdh:565px;
+    width:565px;
     height:725.37px;
-    box-shadow: 10px 10px black;
+    
 }
 .information{
-    width:565px;
+    width:650px;
     height:725.37px;
 }
 .introduce{
@@ -144,8 +148,8 @@ body{
   left: 55%;
 }
 .my_btn {
-  font-size: 30px;
-  background-color: skyblue;
+  font-size: 15px;
+  background-color: #225CFF;
   color: white;
   border: none;
 
@@ -165,11 +169,52 @@ body{
     color: #999; /* Adjust the color to your preference */
     background-color: #fff; /* Set the background color to white or any other desired color */
     border: 1px solid #999; /* Add a border for better visibility */
-    cursor: pointer;
+    pointer-events: auto;
     transition: background-color 0.3s, color 0.3s;
+    font-size: 10px;
+}
+.my_btn2 {
+  width: 177px;
+  height: 64px;
+  color: #FFF; /* Adjust the color to your preference */
+  background-color: #225CFF; /* Set the background color to white or any other desired color */
+  border: 1px solid #999; /* Add a border for better visibility */
+  pointer-events: auto;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 10px 10px;
+}
+.my_btn3 {
+  width: 177px;
+  height: 64px;
+  color: #FFF; /* Adjust the color to your preference */
+  background-color: #EF528A; /* Set the background color to white or any other desired color */
+  border: 1px solid #999; /* Add a border for better visibility */
+  pointer-events: auto;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 10px 10px;
+}
+.my_btn4 {
+  width: 102px;
+  height: 64px;
+  color: #225CFF; /* Adjust the color to your preference */
+  background-color: white; /* Set the background color to white or any other desired color */
+  border: 2px solid #225CFF; /* Add a border for better visibility */
+  pointer-events: auto;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 10px 10px;
+}
+.my_btn5 {
+  width: 246px;
+  height: 46px;
+  color: #225CFF; /* Adjust the color to your preference */
+  background-color: white; /* Set the background color to white or any other desired color */
+  border: 2px solid #225CFF; /* Add a border for better visibility */
+  pointer-events: auto;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 10px 10px;
 }
 
-.my_btn1:hover {
+.my_btn4:hover {
     background-color: #999; /* Change the background color on hover */
     color: #fff; /* Change the text color on hover */
 }
@@ -199,12 +244,40 @@ body{
         }
 .modal {
             display: none;
-           position: fixed;
+           position: absolute;
             right: 0;
             top: 50px; /* 무이자 할부 버튼 바로 밑에 위치하도록 수정 */
             width: 300px;
             border: 1px solid #ccc; /* 테두리 추가 */
             background-color: #fff;
             padding: 20px;
-            z-index: 2; /* 팝업이 다른 요소 위에 나타나도록 수정 */
+            z-index: 1000; /* 팝업이 다른 요소 위에 나타나도록 수정 */
         }
+.flttop {
+          display: inline-block;
+          vertical-align: top;
+      }
+#total-price {
+        font-size: 30px;
+        color: pink;
+      }    
+      #wrap{
+        min-height: 100%;
+        position: relative;
+        
+      }
+      footer{
+        bottom: -3500px;
+        position: absolute;
+        height: 10rem;
+        
+      }
+      .footer2 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-right: 250px;
+        padding-left: 250px;
+        background: black;
+        width: 960px;
+        height: 200px;
+      }

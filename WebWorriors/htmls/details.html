@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>서점</title>
+  <title>WISS</title>
 
   <link rel="stylesheet" href="../csss/star.css">
   <style type="text/css">@import url("../csss/main.css");</style>
@@ -52,11 +52,11 @@
     }
 
   </style>
-  <script src="../jsss/details.js"></script>
+ 
 </head>
 <body>
-
-
+  <script src="../jss/details.js"></script>
+<div id='wrap'>
 <header>
   <div align="center">
     <nav align="right" class="login">
@@ -68,10 +68,10 @@
   <div align="center">
     <nav class="topbar">
       <a href="#"><img src="../img/logo.png" alt="logo" witdh="140px" height="20px"></a>
-      <a href="#">eBook</a>
-      <a href="#">베스트</a>
-      <a href="#">마이페이지</a>
-      <a href="#">고객센터</a>
+      <a href="./login.html">eBook</a>
+      <a href="./login.html">베스트</a>
+      <a href="./login.html">마이페이지</a>
+      <a href="./login.html">고객센터</a>
       <a class="search">
         <input type="text" id="search" required placeholder="찾고싶은 도서 이름을 검색해 보세요">
         <button><img src="../img/search.png" alt="search"></button>
@@ -79,64 +79,71 @@
     </nav>
   </div>
 </header>
+<br>
+<br>
+<br>
 <hr>
 <br>
 <br>
 <br>
 <br>
 <br>
+
 <section>
   <p>
-    안드로이드 프로그래밍 with 자바-<font size="2">단계별 예제로 배우는</font>
+    <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="5">안드로이드 프로그래밍 with 자바</font><font size="2"> - 단계별 예제로 배우는</font></strong>
   </p>
   <pre>
-        송미영(지은이)
+        송미영(지은이) 길벗 캠퍼스 2023-06-30
     </pre>
   <div class="img" ; style="float:left;">
     <img src="../img/XL.jpg" width="565px" height="725.37px">
   </div>
-  <div class="information" style="float:left">
+  <div class="information" style="float:left; margin-left: 65px;" >
     <br>
     <br>
     <br>
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;정가 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;36000원
+      <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;정가 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;36000원</strong>
     </p>
     <br>
     <br>
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;판매가 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;34,400원
+      <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;판매가 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;34,400원</strong>
     </p>
     <br>
     <br>
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;배송료 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;무료
+      <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;배송료 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;무료</strong>
     </p>
     <br>
     <br>
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;수령예상일&nbsp;&nbsp;
+      <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;수령예상일&nbsp;&nbsp;</strong>
       <button class="my_btn">위즈 샛별배송</button>
-      <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;지금
-      택배로 주문하면 내일 아침 7시 등교 전 배송<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*(노원구
-      공릉로 232) 기준
+      <br>
+      <strong>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;지금
+        택배로 주문하면 내일 아침 7시 등교 전 배송<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*(노원구
+        공릉로 232) 기준
+      </strong>
     </p>
     <br>
     <br>
     <br>
     <form style="display: flex; align-items: center;">
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;수량&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<input type="number"
+      <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;수량&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<input type="number"
                                                                                                     min="0" max="10"
                                                                                                     id="quantity"
                                                                                                     onchange="updateTotalPrice()">
-      <span style="margin-left: 10px;">총 상품금액: <span id="total-price">0원</span></span>
+      <span style="margin-left: 10px;"><strong>총 상품금액</strong> <span id="total-price">0원</span></span></strong>
     </form>
     <p>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;무이자 할부
-      <button onclick="openPopup()">A</button>
+      <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;무이자 할부</strong>
+      <button onclick="openPopup()">V</button>
 
       <!-- 무이자 할부 팝업 내용 -->
-    <div id="myModal" class="modal" style="float:left">
+    <div id="myModal" class="modal" style="top:200px;left:800px;">
       <div class="modal-content">
         <span class="close" onclick="closePopup()">&times;</span>
         <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;무이자
@@ -169,37 +176,33 @@
       소득공제
     </button>
     <br><br>
-    <div style="float:left; margin-right: 20px; text-align: right;">
+    <div style="float:left; margin-left: 30px; text-align: left;">
       <!-- 별점 선택 폼 -->
-      <form class="mb-3" name="myform" id="myform" method="post" style="display:inline-block;">
-        <fieldset style="float:left;">
-          <input type="radio" name="reviewStar" value="5" id="rate1"><label for="rate1">★</label>
-          <input type="radio" name="reviewStar" value="4" id="rate2"><label for="rate2">★</label>
-          <input type="radio" name="reviewStar" value="3" id="rate3"><label for="rate3">★</label>
-          <input type="radio" name="reviewStar" value="2" id="rate4"><label for="rate4">★</label>
-          <input type="radio" name="reviewStar" value="1" id="rate5"><label for="rate5">★</label>
-        </fieldset>
-        4.0 리뷰(26) 한줄평(142) | 모바일 프로그래밍 주간 22위
-      </form>
-      <br><br><br><br>
+      <img src="../img/score4.PNG">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="5" style="color: pink;">4.0</font><font size="3"> 리뷰(26) 한줄평(142)</font> |<font size="3"> 모바일 프로그래밍 주간 22위</font>
+      
+    </div>
+      <br><br>
 
-      <div style="float:left;">
+    <div style="float:left; margin-left: 20px;">
 
-        <button class="my_btn1">장바구니 담기</button>
-        <button class="my_btn1">바로구매</button>
-        <button class="my_btn1" onclick="openGiftPopup()">선물함</button>
-        <div id="giftModal" class="modal" style="float:left;">
+      <a href="./login.html"><button class="my_btn2" >장바구니 담기</button></a>
+      <a href="./login.html"><button class="my_btn3">바로구매</button></a>
+        <button class="my_btn4" onclick="openGiftPopup()">선물함</button>
+        <div id="giftModal" class="modal" style="top:600px;left: 1300px;">
           <div class="modal-content">
             <span class="close" onclick="closeGiftPopup()">&times;</span>
-            <button class="my_btn1" onclick="giftNow()">지금바로 선물하기</button>
-            <button class="my_btn1" onclick="addToCartAndGift()">장바구니 담기</button>
+            <br>
+            &nbsp;&nbsp;<a href="./login.html"><button class="my_btn5" onclick="giftNow()"> 지금바로 선물하기</button></a>
+            <br>
+            &nbsp;&nbsp;<a href="./login.html"><button class="my_btn5" onclick="addToCartAndGift()"> 장바구니 담기</button></a>
           </div>
         </div>
 
-        <button class="my_btn1">보관함+</button>
-      </div>
-
+        <button class="my_btn4">보관함+</button>
     </div>
+
+    
   </div>
 </section>
 <section>
@@ -254,10 +257,117 @@
         <img src="../img/423187811.jpg">
       </div>
     </div>
-    <button id="image-container-button" onclick="showImages()">전체 이미지 보기</button>
+    <button id="image-container-button" onclick="showImages()" style="width: 1139px;height: 100px;margin-left: 160px; text-align: center;">전체 이미지 보기</button>
+    <div style="float:left; margin-left:20px; text-align: left;">
+      <!-- 별점 선택 폼 -->
+      <strong><font size="4px" class="flttop" style="color: #225CFF;"><br>한줄평&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></strong>
+      
+      <form class="mb-3" name="myform" id="myform" method="post" style="display:inline-block;">
+        <fieldset style="float:left;">
+          <input type="radio" name="reviewStar" value="5" id="rate1"><label for="rate1">★</label>
+          <input type="radio" name="reviewStar" value="4" id="rate2"><label for="rate2">★</label>
+          <input type="radio" name="reviewStar" value="3" id="rate3"><label for="rate3">★</label>
+          <input type="radio" name="reviewStar" value="2" id="rate4"><label for="rate4">★</label>
+          <input type="radio" name="reviewStar" value="1" id="rate5"><label for="rate5">★</label>
+        </fieldset>
+
+        
+      </form>
+      <br>
+      <textarea style="width: 981px;height: 100px;margin-left: 140px;float: left;" placeholder="한줄평을 남겨 주세요.배송 문의나 상품과 관련 없는 글은 상품 페이지에서 노출 제외 처리될 수 있습니다"></textarea>
+      <button style="width:147px;height: 100px;float: left;margin-left: 2px;">등록</button><br>
+      
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr style="width: 1139px; margin-left: 160px;">
+    <br>
+    <br>
+   
+    
+    <div style="float: left;margin-left: 160px; text-align: left;">
+      <img src="../img/score4.PNG">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;이론 설명과 실습 예제에 대한 풀이가 상세한 좋은 책! 전공 수업 교재로 구매했지만 독학용으로도 추천합니다
+      <br>
+      <br>
+      <br>
+      <img src="../img/score5.PNG">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;위즈 샛별배송으로 구매해서 배송이 진짜 빨랐고 책도 잘 쓰고 있습니다!
+      <br>
+      <br>
+      <a href="./login.html"><button  style="width: 1139px;height: 100px;margin-left: 7px; text-align: center; margin-right:150px">한줄평 더보기V</button></a>
+    </div>
+
+    <br>
+
+
   </div>
+  
 </section>
+</div>
 
 
 </body>
+<footer class="footer2">
+  <ul>
+    <!--로고-->
+    <li>
+      <ul>
+        <li>
+          <div>
+            <img src="../img/logo.png" alt="logo">
+          </div>
+        </li>
+      </ul>
+    </li>
+    <!--about-->
+    <li>
+      <div class="about">
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Feature</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </li>
+    <!--copyright-->
+    <li>
+      <div class="copyright">
+        <ul type="none">
+          <li>
+            <a>&copy 2023 WLSS. All rights reserved</a>
+          </li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+  <div class="getapp">
+    <ul type="none">
+      <p style="color: white">Get the App</p>
+      <li>
+        <a href="#">
+          <img src="../img/appstore.png" alt="appstore.png">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="../img/googleplay.png" alt="googleplay">
+        </a>
+      </li>
+    </ul>
+  </div>
+</footer>
+</html>
+
+
+
 </html>
