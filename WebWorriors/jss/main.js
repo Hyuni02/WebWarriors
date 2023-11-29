@@ -1,14 +1,14 @@
 function popup_best(obj) {
-  openPopup()
+  openPopup_top()
 }
 
-function openPopup() {
+function openPopup_top() {
   var modal = document.getElementById('popup');
   modal.style.display = 'block';
 }
 
 // 팝업 닫기
-function closePopup() {
+function closePopup_top() {
   var modal = document.getElementById('popup');
   modal.style.display = 'none';
 }
@@ -31,7 +31,7 @@ function purchase(s1, s2, s3){
     open("../htmls/modernjavascript.html",self)
   }
   if(s3.checked){
-    open("../htmls/androidprogramming.html",self)
+    open("../htmls/details.html",self)
   }
 }
 

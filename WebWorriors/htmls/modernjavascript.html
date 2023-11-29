@@ -67,17 +67,32 @@
   <!-- Topbar -->
   <div align="center">
     <nav class="topbar">
-      <a href="#"><img src="../img/logo.png" alt="logo" witdh="140px" height="20px"></a>
-      <a href="#">eBook</a>
-      <a href="#">베스트</a>
-      <a href="#">마이페이지</a>
-      <a href="#">고객센터</a>
+      <a href="index.html"><img src="../img/logo.png" alt="logo"></a>
+      <a href="#" onclick="alert_noimplement()">eBook</a>
+      <a onmouseover="popup_best()" onmouseleave="closePopup_top()">베스트</a>
+      <div onmouseover="popup_best()" onmouseleave="closePopup_top()" id="popup" style="left: 30%;">
+        <ul>
+          <li>
+            <a href="#" onclick="alert_noimplement()">국내도서</a>
+          </li>
+          <li>
+            <a href="#" onclick="alert_noimplement()">외국도서</a>
+          </li>
+          <li>
+            <a href="#" onclick="alert_noimplement()">eBook</a>
+          </li>
+        </ul>
+      </div>
+      <a href="login.html" onclick="mypage()">마이페이지</a>
+      <a href="servicecenter.html">고객센터</a>
       <a class="search">
         <input type="text" id="search" required placeholder="찾고싶은 도서 이름을 검색해 보세요">
         <button onclick="search(document.getElementById('search').value)"><img src="../img/search.png" alt="search"></button>
       </a>
     </nav>
   </div>
+  <script src="../jss/main.js"></script>
+  <script>closePopup_top()</script>
 </header>
 <br>
 <br>
@@ -180,7 +195,7 @@
       <!-- 별점 선택 폼 -->
       <img src="../img/score4.PNG">
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="5" style="color: pink;">4.0</font><font size="3"> 리뷰(26) 한줄평(142)</font> |<font size="3"> 모바일 프로그래밍 주간 22위</font>
-      
+
     </div>
       <br><br>
 
@@ -202,7 +217,7 @@
         <button class="my_btn4">보관함+</button>
     </div>
 
-    
+
   </div>
 </section>
 <section>
@@ -243,7 +258,7 @@
         컴퓨터공학을 전공하고 20여 년간 다양한 산업체에서 SW 개발자로 활동하였다. 최근에는 AI 활용 솔루션 및 데이터 보안 연구에 관심이 많으며 평소에도 연구한 기술을 정리하고 소통하는 것<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;을 좋아
         한다. 이러한 성격 탓에 집필, 번역, 강의 등의 여러 활동을 통해 독자 및 학생들과 소통을 하고 있으며 특히 미래의 IT 개발자를 꿈꾸는 학생들을 교육하는 일에 주력하고 있다.현재는 성<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;신여자대학교 융
         합보안공학과 겸임교수로 재직 중이며, 이창현코딩연구소의 대표로 활동하고 있다.대표 저서 : 『나혼자 C언어』(디지털북스, 2021), 『나혼자 파이썬』(디지털북스, 2020), 『C# <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;프로그래밍의 정
-        석』(혜지원, 2019) 등 총 9권.번역서 : 『스파크를 이용한 자연어 처리』(한빛미디어, 2021), 『데이터 익명화를 위한 파이프라인』(한빛미디어, 2022) 
+        석』(혜지원, 2019) 등 총 9권.번역서 : 『스파크를 이용한 자연어 처리』(한빛미디어, 2021), 『데이터 익명화를 위한 파이프라인』(한빛미디어, 2022)
     </p>
     <br><br>
     <hr>
@@ -261,7 +276,7 @@
     <div style="float:left; margin-left:20px; text-align: left;">
       <!-- 별점 선택 폼 -->
       <strong><font size="4px" class="flttop" style="color: #225CFF;"><br>한줄평&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></strong>
-      
+
       <form class="mb-3" name="myform" id="myform" method="post" style="display:inline-block;">
         <fieldset style="float:left;">
           <input type="radio" name="reviewStar" value="5" id="rate1"><label for="rate1">★</label>
@@ -271,12 +286,12 @@
           <input type="radio" name="reviewStar" value="1" id="rate5"><label for="rate5">★</label>
         </fieldset>
 
-        
+
       </form>
       <br>
       <textarea style="width: 981px;height: 100px;margin-left: 140px;float: left;" placeholder="한줄평을 남겨 주세요.배송 문의나 상품과 관련 없는 글은 상품 페이지에서 노출 제외 처리될 수 있습니다"></textarea>
       <button style="width:147px;height: 100px;float: left;margin-left: 2px;">등록</button><br>
-      
+
     </div>
     <br>
     <br>
@@ -291,8 +306,8 @@
     <hr style="width: 1139px; margin-left: 160px;">
     <br>
     <br>
-   
-    
+
+
     <div style="float: left;margin-left: 160px; text-align: left;">
       <img src="../img/score4.PNG">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;이론 설명과 실습 예제에 대한 풀이가 상세한 좋은 책! 전공 수업 교재로 구매했지만 독학용으로도 추천합니다
       <br>
@@ -308,7 +323,7 @@
 
 
   </div>
-  
+
 </section>
 </div>
 

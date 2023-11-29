@@ -19,10 +19,10 @@
 <!-- Topbar -->
 <div align="center">
   <nav class="topbar">
-    <a href="#"><img src="../img/logo.png" alt="logo"></a>
+    <a href="index.html"><img src="../img/logo.png" alt="logo"></a>
     <a href="#" onclick="alert_noimplement()">eBook</a>
-    <a onmouseover="popup_best()" onmouseleave="closePopup()">베스트</a>
-    <div onmouseover="openPopup()" onmouseleave="closePopup()" id="popup">
+    <a onmouseover="popup_best()" onmouseleave="closePopup_top()">베스트</a>
+    <div onmouseover="popup_best()" onmouseleave="closePopup_top()" id="popup">
       <ul>
         <li>
           <a href="#" onclick="alert_noimplement()">국내도서</a>
@@ -125,6 +125,6 @@
     </ul>
   </div>
 </footer>
-<script>closePopup()</script>
+<script>closePopup_top()</script>
 </body>
 </html>
