@@ -1,40 +1,47 @@
-
 @font-face {
-    font-family: 'Pretendard-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
 }
-html{
+
+html {
   width: 1920px;
 }
-body{
-    
-    font-family:'Pretendard-Regular';
-    padding-left:310px;
-    padding-right:310px;
-    margin: 0;
+
+body {
+
+  font-family: 'Pretendard-Regular';
+  padding-left: 310px;
+  padding-right: 310px;
+  margin: 0;
 }
-.box{
-            padding-left:310px;
-            padding-right:310px;
-    }
+
+.box {
+  padding-left: 310px;
+  padding-right: 310px;
+}
+
 .main {
   /*width: ;*/
 }
-.img{
-    width:565px;
-    height:725.37px;
-    
+
+.img {
+  width: 565px;
+  height: 725.37px;
+
 }
-.information{
-    width:650px;
-    height:725.37px;
+
+.information {
+  width: 650px;
+  height: 725.37px;
 }
-.introduce{
-    width:1300px;
-    height:200px;
+
+.introduce {
+  width: 1300px;
+  height: 200px;
 }
+
 .login {
   height: 44px;
   width: 1189px;
@@ -114,39 +121,40 @@ body{
   height: 200px;
 }
 
-.about{
+.about {
   margin-top: 70px;
 }
 
-.about > ul li{
+.about > ul li {
   display: inline;
 }
 
-.about > ul li a{
+.about > ul li a {
   text-decoration: none;
 }
 
-.about > ul li a:link{
+.about > ul li a:link {
   color: white;
 }
 
-.about > ul li a:visited{
+.about > ul li a:visited {
   color: white;
 }
 
-.copyright{
+.copyright {
   margin-top: 25px;
 }
 
-.copyright{
+.copyright {
   color: white;
 }
 
-.getapp{
+.getapp {
   position: relative;
   top: -200px;
   left: 55%;
 }
+
 .my_btn {
   font-size: 15px;
   background-color: #225CFF;
@@ -155,24 +163,34 @@ body{
 
   border-radius: 20px 30px;
 }
-.form > div{witdh:30px;height: 20px;
+
+.form > div {
+  witdh: 30px;
+  height: 20px;
 
 }
-.score{
-    width:50px;
-    height: 30px;
+
+.score {
+  width: 50px;
+  height: 30px;
 }
+
 /* Add these styles to adjust the "무료배송" and "소득공제" buttons */
 .my_btn1 {
-    width: 66px;
-    height: 29px;
-    color: #999; /* Adjust the color to your preference */
-    background-color: #fff; /* Set the background color to white or any other desired color */
-    border: 1px solid #999; /* Add a border for better visibility */
-    pointer-events: auto;
-    transition: background-color 0.3s, color 0.3s;
-    font-size: 10px;
+  width: 66px;
+  height: 29px;
+  color: #999; /* Adjust the color to your preference */
+  background-color: #fff; /* Set the background color to white or any other desired color */
+  border: 1px solid #999; /* Add a border for better visibility */
+  pointer-events: auto;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 10px;
 }
+.my_btn1:hover{
+  color: white; /* Adjust the color to your preference */
+  background-color: darkgray; /* Set the background color to white or any other desired color */
+}
+
 .my_btn2 {
   width: 177px;
   height: 64px;
@@ -183,6 +201,11 @@ body{
   transition: background-color 0.3s, color 0.3s;
   border-radius: 10px 10px;
 }
+.my_btn2:hover{
+  color: black; /* Adjust the color to your preference */
+  background-color: cyan; /* Set the background color to white or any other desired color */
+}
+
 .my_btn3 {
   width: 177px;
   height: 64px;
@@ -193,6 +216,11 @@ body{
   transition: background-color 0.3s, color 0.3s;
   border-radius: 10px 10px;
 }
+.my_btn3:hover{
+  color: black; /* Adjust the color to your preference */
+  background-color: lightpink; /* Set the background color to white or any other desired color */
+}
+
 .my_btn4 {
   width: 102px;
   height: 64px;
@@ -203,6 +231,7 @@ body{
   transition: background-color 0.3s, color 0.3s;
   border-radius: 10px 10px;
 }
+
 .my_btn5 {
   width: 246px;
   height: 46px;
@@ -215,72 +244,84 @@ body{
 }
 
 .my_btn4:hover {
-    background-color: #999; /* Change the background color on hover */
-    color: #fff; /* Change the text color on hover */
+  background-color: #999; /* Change the background color on hover */
+  color: #fff; /* Change the text color on hover */
 }
+
 .partial {
-            height: 1883px; /* Set the initial height */
-            overflow: hidden; /* Hide the overflow */
-            position: relative; /* Enable relative positioning */
-        }
+  height: 1883px; /* Set the initial height */
+  overflow: hidden; /* Hide the overflow */
+  position: relative; /* Enable relative positioning */
+}
+
 #imageContainer {
-            position: relative; /* Enable relative positioning for the container */
-        }
+  position: relative; /* Enable relative positioning for the container */
+}
+
 #imageContainer img {
-            width: 1139px; /* 이미지의 원래 가로 크기 */
-            height: 7789px; /* 이미지의 원래 세로 크기 */
-        }
+  width: 1139px; /* 이미지의 원래 가로 크기 */
+  height: 7789px; /* 이미지의 원래 세로 크기 */
+}
+
 #image-overlay {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            color: white;
-            font-size: 18px;
-            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7); /* Add a text shadow for better visibility */
-            z-index: 1; /* Ensure the overlay is on top of the image */
-        }
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+  font-size: 18px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7); /* Add a text shadow for better visibility */
+  z-index: 1; /* Ensure the overlay is on top of the image */
+}
+
 #image-container-button {
-            width: 100%; /* Set the button width to 100% */
-        }
+  width: 100%; /* Set the button width to 100% */
+}
+
 .modal {
-            display: none;
-           position: absolute;
-            right: 0;
-            top: 50px; /* 무이자 할부 버튼 바로 밑에 위치하도록 수정 */
-            width: 300px;
-            border: 1px solid #ccc; /* 테두리 추가 */
-            background-color: #fff;
-            padding: 20px;
-            z-index: 1000; /* 팝업이 다른 요소 위에 나타나도록 수정 */
-        }
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 50px; /* 무이자 할부 버튼 바로 밑에 위치하도록 수정 */
+  width: 300px;
+  border: 1px solid #ccc; /* 테두리 추가 */
+  background-color: #fff;
+  padding: 20px;
+  z-index: 1000; /* 팝업이 다른 요소 위에 나타나도록 수정 */
+}
+
 .flttop {
-          display: inline-block;
-          vertical-align: top;
-      }
+  display: inline-block;
+  vertical-align: top;
+}
+
 #total-price {
-        font-size: 30px;
-        color: pink;
-      }    
-      #wrap{
-        min-height: 100%;
-        position: relative;
-        
-      }
-      footer{
-        bottom: -3500px;
-        position: absolute;
-        height: 10rem;
-        
-      }
-      .footer2 {
-        padding-top: 50px;
-        padding-bottom: 50px;
-        padding-right: 250px;
-        padding-left: 250px;
-        background: black;
-        width: 960px;
-        height: 200px;
-      }
-      .notme{
-        
-      }
+  font-size: 30px;
+  color: pink;
+}
+
+#wrap {
+  min-height: 100%;
+  position: relative;
+
+}
+
+footer {
+  bottom: -3500px;
+  position: absolute;
+  height: 10rem;
+
+}
+
+.footer2 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-right: 250px;
+  padding-left: 250px;
+  background: black;
+  width: 960px;
+  height: 200px;
+}
+
+.notme {
+
+}
