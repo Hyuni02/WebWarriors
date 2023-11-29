@@ -1,6 +1,14 @@
-function updateTotalPrice() {
+function updateTotalPrice1() {
         var quantity = document.getElementById('quantity').value;
         var unitPrice = 34400; // Assuming unit price is 34,400원, you can adjust this value
+
+        var totalPrice = quantity * unitPrice;
+        document.getElementById('total-price').innerText = totalPrice.toLocaleString('en-US') + '원';
+    }
+    
+    function updateTotalPrice2() {
+        var quantity = document.getElementById('quantity').value;
+        var unitPrice = 26400; // Assuming unit price is 34,400원, you can adjust this value
 
         var totalPrice = quantity * unitPrice;
         document.getElementById('total-price').innerText = totalPrice.toLocaleString('en-US') + '원';
