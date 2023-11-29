@@ -21,15 +21,30 @@
   <nav class="topbar">
     <a href="#"><img src="../img/logo.png" alt="logo"></a>
     <a href="#" onclick="alert_noimplement()">eBook</a>
-    <a href="#" onmouseover="popup_best(this)">베스트</a>
+    <a onmouseover="popup_best()" onmouseleave="closePopup()">베스트</a>
+    <div onmouseover="openPopup()" onmouseleave="closePopup()" id="popup">
+      <ul>
+        <li>
+          <a href="#" onclick="alert_noimplement()">국내도서</a>
+        </li>
+        <li>
+          <a href="#" onclick="alert_noimplement()">외국도서</a>
+        </li>
+        <li>
+          <a href="#" onclick="alert_noimplement()">eBook</a>
+        </li>
+      </ul>
+    </div>
     <a href="login.html" onclick="mypage()">마이페이지</a>
-    <a href="#" onclick="service()">고객센터</a>
+    <a href="servicecenter.html">고객센터</a>
     <a class="search">
       <input type="text" id="search" required placeholder="찾고싶은 도서 이름을 검색해 보세요">
       <button onclick="search(document.getElementById('search').value)"><img src="../img/search.png" alt="search"></button>
     </a>
   </nav>
 </div>
+
+
 
 <!-- 중앙 -->
 <section>
@@ -52,7 +67,7 @@
     iframe 태그 미지원 브라우저
   </iframe>
   <!--오늘의 베스트 셀러-->
-  <iframe class="todaybest" src="todaybest.html" width="500px" height="600px">
+  <iframe class="todaybest" src="todaybest.html" width="600px" height="600px">
     iframe 태그 미지원 브라우저
   </iframe>
 </section>
@@ -110,5 +125,6 @@
     </ul>
   </div>
 </footer>
+<script>closePopup()</script>
 </body>
 </html>

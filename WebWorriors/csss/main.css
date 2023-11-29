@@ -1,7 +1,38 @@
+body{
+  background: linear-gradient(#bbcbff, white 10%);
+  min-height: 100%;
+}
+
 .login {
   height: 44px;
   width: 1189px;
 }
+
+
+#popup {
+  text-align: left;
+  left: 35%;
+  padding-right: 25px;
+  position: absolute;
+  width: 200px;
+  height: auto;
+
+  background-color: white;
+  border-radius: 15px;
+}
+
+#popup > ul li a{
+  text-decoration: none;
+}
+
+#popup > ul li a:link{
+  color: black;
+}
+
+#popup > ul li a:visited{
+  color: black;
+}
+
 
 .login > a {
   text-decoration: none;

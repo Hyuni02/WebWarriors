@@ -1,24 +1,37 @@
-function popup_best() {
-  alert("미구현")
+function popup_best(obj) {
+  openPopup()
 }
 
-function service(){
-  alert("미구현")
+function openPopup() {
+  var modal = document.getElementById('popup');
+  modal.style.display = 'block';
+}
+
+// 팝업 닫기
+function closePopup() {
+  var modal = document.getElementById('popup');
+  modal.style.display = 'none';
 }
 
 function search(title) {
-  alert(title)
+  localStorage.setItem("title", title)
+  open("../htmls/noresult.html", self)
+}
+
+function load(){
+  document.getElementById('title').textContent
+    = localStorage.getItem("title")
 }
 
 function purchase(s1, s2, s3){
   if(s1.checked){
-    open("../htmls/machinelearninganddeeplearning.html")
+    open("../htmls/machinelearninganddeeplearning.html",self)
   }
   if(s2.checked){
-    open("../htmls/modernjavascript.html")
+    open("../htmls/modernjavascript.html",self)
   }
   if(s3.checked){
-    open("../htmls/androidprogramming.html")
+    open("../htmls/androidprogramming.html",self)
   }
 }
 
