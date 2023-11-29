@@ -20,7 +20,20 @@
   <nav class="topbar">
     <a href="#"><img src="../img/logo.png" alt="logo"></a>
     <a href="#" onclick="alert_noimplement()">eBook</a>
-    <a href="#" onmouseover="popup_best(this)">베스트</a>
+    <a onmouseover="popup_best()" onmouseleave="closePopup()">베스트</a>
+    <div onmouseover="openPopup()" onmouseleave="closePopup()" id="popup">
+      <ul>
+        <li>
+          <a href="#" onclick="alert_noimplement()">국내도서</a>
+        </li>
+        <li>
+          <a href="#" onclick="alert_noimplement()">외국도서</a>
+        </li>
+        <li>
+          <a href="#" onclick="alert_noimplement()">eBook</a>
+        </li>
+      </ul>
+    </div>
     <a href="login.html" onclick="mypage()">마이페이지</a>
     <a href="servicecenter.html">고객센터</a>
     <a class="search">
@@ -29,6 +42,8 @@
     </a>
   </nav>
 </div>
+
+
 <div style="margin-left: 200px; margin-right: 200px">
 <h2 style="margin-top: 100px; margin-left: 20px">'<strong id="title">[검색어]</strong>'에 대한 검색 결과가 없습니다.</h2>
   <br>
@@ -44,5 +59,6 @@
 </ul>
 </div>
 <script>load()</script>
+<script>closePopup()</script>
 </body>
 </html>
