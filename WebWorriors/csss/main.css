@@ -1,4 +1,4 @@
-body{
+body:not(.notme){
   background: linear-gradient(#bbcbff, white 10%);
   min-height: 100%;
 }
