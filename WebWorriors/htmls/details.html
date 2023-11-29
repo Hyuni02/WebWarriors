@@ -52,7 +52,8 @@
     }
 
   </style>
-  <script src="../jsss/details.js"></script>
+  <script src="../jss/details.js"></script>
+  <script src="../jss/main.js"></script>
 </head>
 <body>
 
@@ -67,14 +68,27 @@
   <!-- Topbar -->
   <div align="center">
     <nav class="topbar">
-      <a href="#"><img src="../img/logo.png" alt="logo" witdh="140px" height="20px"></a>
-      <a href="#">eBook</a>
-      <a href="#">베스트</a>
-      <a href="#">마이페이지</a>
-      <a href="#">고객센터</a>
+      <a href="#"><img src="../img/logo.png" alt="logo"></a>
+      <a href="#" onclick="alert_noimplement()">eBook</a>
+      <a onmouseover="popup_best()" onmouseleave="closePopup()">베스트</a>
+      <div onmouseover="openPopup()" onmouseleave="closePopup()" id="popup">
+        <ul>
+          <li>
+            <a href="#" onclick="alert_noimplement()">국내도서</a>
+          </li>
+          <li>
+            <a href="#" onclick="alert_noimplement()">외국도서</a>
+          </li>
+          <li>
+            <a href="#" onclick="alert_noimplement()">eBook</a>
+          </li>
+        </ul>
+      </div>
+      <a href="login.html" onclick="mypage()">마이페이지</a>
+      <a href="servicecenter.html">고객센터</a>
       <a class="search">
         <input type="text" id="search" required placeholder="찾고싶은 도서 이름을 검색해 보세요">
-        <button><img src="../img/search.png" alt="search"></button>
+        <button onclick="search(document.getElementById('search').value)"><img src="../img/search.png" alt="search"></button>
       </a>
     </nav>
   </div>
@@ -258,6 +272,6 @@
   </div>
 </section>
 
-
+<script>closePopup()</script>
 </body>
 </html>

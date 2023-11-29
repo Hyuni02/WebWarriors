@@ -22,7 +22,7 @@
     <a href="#" onclick="alert_noimplement()">eBook</a>
     <a href="#" onmouseover="popup_best(this)">베스트</a>
     <a href="login.html" onclick="mypage()">마이페이지</a>
-    <a href="#" onclick="service()">고객센터</a>
+    <a href="servicecenter.html">고객센터</a>
     <a class="search">
       <input type="text" id="search" required placeholder="찾고싶은 도서 이름을 검색해 보세요">
       <button onclick="search(document.getElementById('search').value)"><img src="../img/search.png" alt="search"></button>
@@ -30,7 +30,7 @@
   </nav>
 </div>
 <div style="margin-left: 200px; margin-right: 200px">
-<h2 style="margin-top: 100px; margin-left: 20px">'<strong>[검색어]</strong>에 대한 검색 결과가 없습니다.</h2>
+<h2 style="margin-top: 100px; margin-left: 20px">'<strong id="title">[검색어]</strong>'에 대한 검색 결과가 없습니다.</h2>
   <br>
 <hr>
   <br>
@@ -43,5 +43,6 @@
   </li>
 </ul>
 </div>
+<script>load()</script>
 </body>
 </html>
