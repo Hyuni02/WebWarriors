@@ -1,7 +1,8 @@
 body:not(.notme){
   background: linear-gradient(#bbcbff, white 10%);
   min-height: 100%;
-}
+}/*모든 body태그에서 적용되는 문제있어서 수정하였습니다*/
+
 
 .login {
   height: 44px;
