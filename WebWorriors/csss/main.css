@@ -54,10 +54,7 @@ body:not(.notme){
   height: 36px;
 }
 
-.topbar:hover a {
-  color: #225CFF;
-  transition: 0.2s;
-}
+
 
 .topbar > a {
   font-size: 20px;
@@ -74,6 +71,11 @@ body:not(.notme){
 
 .topbar > a:visited {
   color: black;
+}
+
+.topbar a:hover {
+  color: #225CFF;
+  transition: 0.2s;
 }
 
 .search > input {
