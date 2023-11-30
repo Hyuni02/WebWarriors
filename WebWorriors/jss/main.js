@@ -23,6 +23,7 @@ function load(){
     = localStorage.getItem("title")
 }
 
+
 function purchase(s1, s2, s3){
   if(s1.checked){
     open("../htmls/machinelearninganddeeplearning.html",self)
