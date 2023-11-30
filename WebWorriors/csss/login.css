@@ -29,11 +29,11 @@ p{
 }
 
 button{
-  background-color: blue;
+  background-color: #225CFF;
   color: white;
 }
 
 button:hover{
-  background-color: cyan;
-  color: black;
+  background-color: white;
+  color: #225CFF;
 }
