@@ -160,12 +160,21 @@ body {
   left: 55%;
 }
 
-.my_btn {
+.wlss_shipping {
   font-size: 15px;
   background-color: #225CFF;
   color: white;
   border: none;
 
+  border-radius: 25px 25px;
+  padding: 12px;
+}
+
+.my_btn {
+  font-size: 30px;
+  background-color: #225CFF;
+  color: white;
+  font-weight: bold;
   border-radius: 20px 30px;
 }
 
@@ -199,31 +208,37 @@ body {
 .my_btn2 {
   width: 177px;
   height: 64px;
-  color: #FFF; /* Adjust the color to your preference */
+  color: white; /* Adjust the color to your preference */
   background-color: #225CFF; /* Set the background color to white or any other desired color */
-  border: 1px solid #999; /* Add a border for better visibility */
+  border: 1px solid transparen; /* 초기에 투명 테두리 */
   pointer-events: auto;
   transition: background-color 0.3s, color 0.3s;
   border-radius: 10px 10px;
+  font-size: 16px; /* 폰트 크기 조절 */
+  font-weight: bold; /* 폰트 두께 조절 */
 }
 .my_btn2:hover{
-  color: black; /* Adjust the color to your preference */
-  background-color: cyan; /* Set the background color to white or any other desired color */
+  background-color: white;
+  color: #225CFF;
+  border-color: #225CFF; /* Set the background color to white or any other desired color */
 }
 
 .my_btn3 {
   width: 177px;
   height: 64px;
-  color: #FFF; /* Adjust the color to your preference */
+  color: white; /* Adjust the color to your preference */
   background-color: #EF528A; /* Set the background color to white or any other desired color */
-  border: 1px solid #999; /* Add a border for better visibility */
+  border: 1px solid transparen; /* 초기에 투명 테두리 */
   pointer-events: auto;
   transition: background-color 0.3s, color 0.3s;
   border-radius: 10px 10px;
+  font-size: 16px; /* 폰트 크기 조절 */
+  font-weight: bold; /* 폰트 두께 조절 */
 }
 .my_btn3:hover{
-  color: black; /* Adjust the color to your preference */
+  color: #EF528A; /* Adjust the color to your preference */
   background-color: lightpink; /* Set the background color to white or any other desired color */
+  border-color: #EF528A;
 }
 
 .my_btn4 {
@@ -235,6 +250,8 @@ body {
   pointer-events: auto;
   transition: background-color 0.3s, color 0.3s;
   border-radius: 10px 10px;
+  font-size: 16px; /* 폰트 크기 조절 */
+  font-weight: bold; /* 폰트 두께 조절 */
 }
 
 .my_btn5 {
@@ -246,11 +263,13 @@ body {
   pointer-events: auto;
   transition: background-color 0.3s, color 0.3s;
   border-radius: 10px 10px;
+  font-size: 16px; /* 폰트 크기 조절 */
+  font-weight: bold; /* 폰트 두께 조절 */
 }
 
 .my_btn4:hover {
-  background-color: #999; /* Change the background color on hover */
-  color: #fff; /* Change the text color on hover */
+  background-color: #225CFF;
+  color: white;
 }
 
 .partial {
@@ -301,7 +320,11 @@ body {
 
 #total-price {
   font-size: 30px;
-  color: pink;
+  color: #EF528A;
+}
+
+#quantity {
+  display: inline-block; !important; /* 수량 조절 버튼 항상 보이도록 설정 */
 }
 
 #wrap {
