@@ -76,14 +76,32 @@ body:not(.notme){
   transition: 0.2s;
 }
 
+
 .search > input {
   width: 348px;
   height: 24px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  /* border - 선 굵기 / 모양 / 색상 조정 
+  rgba 0,0,0,0 은 투명입니다~ */
+  border-radius: 20px;
+  /* 칸의 round값 조정 px값 올라갈수록 둥글어짐 */
+}
+
+.search > button {
+  /* width: 24px;
+  height: 24px; */
+  border-radius: 20px;
+  border: solid 1px rgba(0, 0, 0, 0);
+  background-color: white;
+  position: relative;
+  top: 7px;
 }
 
 .search > button img {
   width: 24px;
   height: 24px;
+  display: block;
+  margin: auto;
 }
 
 .ilust_main {

@@ -62,6 +62,17 @@
     document.getElementById('bookImage').src = '../img/XL.png'; // Restore the original image path
   }
   </script>
+
+<script>
+  document.getElementById('image-container-button').addEventListener('click', function() {
+    // image-container-button 클릭 시 실행될 코드
+    var footer = document.getElementById('footer2');
+    // 여기서는 footer의 position을 변경하여 페이지 최하단으로 이동시킵니다.
+    footer.style.position = 'absolute'; // 'absolute' 대신 다른 값을 사용할 수도 있습니다.
+    footer.style.bottom = '0';
+  });
+</script>
+
 </head>
 <body class="notme">
 <script src="../jss/details.js"></script>
