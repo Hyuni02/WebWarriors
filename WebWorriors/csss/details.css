@@ -6,7 +6,7 @@
 }
 
 html {
-  width: 1920px;
+  
 }
 
 body {
@@ -18,7 +18,7 @@ body {
 }
 
 #wrap {
-  margin-left: 310px;
+  margin-left: 200px;
   min-height: 100%;
   position: relative;
 }

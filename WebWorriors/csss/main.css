@@ -1,7 +1,9 @@
 body:not(.notme){
   background: linear-gradient(#bbcbff, white 10%) no-repeat;
   min-height: 100%;
-
+  margin: 0 !important; /* 여백 제거 */
+  padding: 0 !important; /* 여백 제거 */
+  overflow-x: hidden; /* 가로 스크롤 막기 */
 }/*모든 body태그에서 적용되는 문제있어서 수정하였습니다*/
 
 
