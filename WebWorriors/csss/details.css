@@ -86,6 +86,11 @@ body {
   color: black;
 }
 
+.topbar a:hover {
+  color: #225CFF;
+  transition: 0.2s;
+}
+
 .search > input {
   width: 348px;
   height: 24px;
