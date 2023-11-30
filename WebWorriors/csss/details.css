@@ -272,6 +272,18 @@ body {
   color: white;
 }
 
+.my_btn6 {
+  width:147px;
+  height: 100px;
+  float: left;
+  margin-left: 2px;
+  color:white;
+  background-color: #225CFF;
+  border-radius: 20px;
+  font-size: 16px; /* 폰트 크기 조절 */
+  font-weight: bold; /* 폰트 두께 조절 */
+}
+
 .partial {
   height: 1883px; /* Set the initial height */
   overflow: hidden; /* Hide the overflow */
@@ -299,6 +311,9 @@ body {
 
 #image-container-button {
   width: 100%; /* Set the button width to 100% */
+  color:gray;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .modal {
