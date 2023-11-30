@@ -53,6 +53,15 @@
 
   </style>
   <script src="../jss/details.js"></script>
+  <script> /*책 표지 호버 효과*/
+    function changeImage() {
+      document.getElementById('bookImage').src = '../img/XLback.png'; // Replace 'otherImage.png' with the path to the new image
+    }
+  
+    function restoreImage() {
+      document.getElementById('bookImage').src = '../img/XL.png'; // Restore the original image path
+    }
+  </script>
 </head>
 <body class="notme">
   <script src="../jss/details.js"></script>
@@ -111,9 +120,9 @@
   <pre>
         송미영(지은이) 길벗 캠퍼스 2023-06-30
     </pre>
-  <div class="img" ; style="float:left;">
-    <img src="../img/XL.jpg" width="565px" height="725.37px">
-  </div>
+    <div class="img" style="float:left;">
+      <img id="bookImage" src="../img/XL.png" width="565px" height="725.37px" onmouseover="changeImage()" onmouseout="restoreImage()">
+    </div>
   <div class="information" style="float:left; margin-left: 65px;" >
     <br>
     <br>
