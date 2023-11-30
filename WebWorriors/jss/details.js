@@ -1,3 +1,4 @@
+
 function updateTotalPrice1() {
         var quantity = document.getElementById('quantity').value;
         var unitPrice = 34400; // Assuming unit price is 34,400원, you can adjust this value

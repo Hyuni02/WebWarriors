@@ -53,78 +53,56 @@
 
   </style>
   <script src="../jss/details.js"></script>
-  <script> /*책 표지 호버 효과*/
-  function changeImage() {
-    document.getElementById('bookImage').src = '../img/XLback.png'; // Replace 'otherImage.png' with the path to the new image
-  }
-
-  function restoreImage() {
-    document.getElementById('bookImage').src = '../img/XL.png'; // Restore the original image path
-  }
-  </script>
-
-<script>
-  document.getElementById('image-container-button').addEventListener('click', function() {
-    // image-container-button 클릭 시 실행될 코드
-    var footer = document.getElementById('footer2');
-    // 여기서는 footer의 position을 변경하여 페이지 최하단으로 이동시킵니다.
-    footer.style.position = 'absolute'; // 'absolute' 대신 다른 값을 사용할 수도 있습니다.
-    footer.style.bottom = '0';
-  });
-</script>
-
-</head>
-<body class="notme">
-<script src="../jss/details.js"></script>
-<div id='wrap'>
-  <header>
-    <div align="center">
-      <nav align="right" class="login">
-        <a href="./login.html">로그인</a>
-        <a href="./register.html">회원가입</a>
-      </nav>
-    </div>
-
-    <!-- Topbar -->
-    <div align="center">
-      <nav class="topbar">
-        <a href="index.html"><img src="../img/logo.png" alt="logo"></a>
-        <a href="#" onclick="alert_noimplement()">eBook</a>
-        <a onmouseover="popup_best()" onmouseleave="closePopup_top()">베스트</a>
-        <div onmouseover="popup_best()" onmouseleave="closePopup_top()" id="popup" style="left: 30%;">
-          <ul>
-            <li>
-              <a href="#" onclick="alert_noimplement()">국내도서</a>
-            </li>
-            <li>
-              <a href="#" onclick="alert_noimplement()">외국도서</a>
-            </li>
-            <li>
-              <a href="#" onclick="alert_noimplement()">eBook</a>
-            </li>
-          </ul>
-        </div>
-        <a href="login.html" onclick="mypage()">마이페이지</a>
-        <a href="servicecenter.html">고객센터</a>
-        <a class="search">
-          <input type="text" id="search" required placeholder="찾고싶은 도서 이름을 검색해 보세요">
-          <button onclick="search(document.getElementById('search').value)"><img src="../img/search.png" alt="search">
-          </button>
-        </a>
-      </nav>
-    </div>
     <script src="../jss/main.js"></script>
-  </header>
-  <br>
-  <br>
-  <br>
-  <hr>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+  
+</head>
+<body>
+<header>
+  <div align="center">
+    <nav align="right" class="login">
+      <a href="./login.html">로그인</a>
+      <a href="./register.html">회원가입</a>
+    </nav>
+  </div>
 
+  <!-- Topbar -->
+  <div align="center">
+    <nav class="topbar">
+      <a href="index.html"><img src="../img/logo.png" alt="logo"></a>
+      <a href="#" onclick="alert_noimplement()">eBook</a>
+      <a onmouseover="popup_best()" onmouseleave="closePopup_top()">베스트</a>
+      <div onmouseover="popup_best()" onmouseleave="closePopup_top()" id="popup" style="left: 30%;">
+        <ul>
+          <li>
+            <a href="#" onclick="alert_noimplement()">국내도서</a>
+          </li>
+          <li>
+            <a href="#" onclick="alert_noimplement()">외국도서</a>
+          </li>
+          <li>
+            <a href="#" onclick="alert_noimplement()">eBook</a>
+          </li>
+        </ul>
+      </div>
+      <a href="login.html" onclick="mypage()">마이페이지</a>
+      <a href="servicecenter.html">고객센터</a>
+      <a class="search">
+        <input type="text" id="search" required placeholder="찾고싶은 도서 이름을 검색해 보세요">
+        <button onclick="search(document.getElementById('search').value)"><img src="../img/search.png" alt="search">
+        </button>
+      </a>
+    </nav>
+  </div>
+</header>
+<div id='wrap'>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
   <section>
     <p>
       <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="5">안드로이드 프로그래밍 with 자바</font><font
@@ -369,7 +347,7 @@
 </div>
 
 <script>closePopup_top()</script>
-</body>
+
 <footer class="footer2">
   <ul>
     <!--로고-->
@@ -422,6 +400,7 @@
     </ul>
   </div>
 </footer>
+</body>
 </html>
 
 
