@@ -1,3 +1,4 @@
+
 function updateTotalPrice1() {
         var quantity = document.getElementById('quantity').value;
         var unitPrice = 34400; // Assuming unit price is 34,400원, you can adjust this value
@@ -20,7 +21,7 @@ function updateTotalPrice1() {
             container.classList.toggle("partial");
 
             // Update the button text based on the container class
-            var buttonText = container.classList.contains("partial") ? "전체 이미지 보기" : "초기 이미지 보기";
+            var buttonText = container.classList.contains("partial") ? "상세정보 더보기 ▼" : "상세정보 접기 ▲";
             document.getElementById("image-container-button").innerText = buttonText;
         }
         // 팝업 열기
