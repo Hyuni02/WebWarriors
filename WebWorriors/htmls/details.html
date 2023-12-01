@@ -54,7 +54,15 @@
   </style>
   <script src="../jss/details.js"></script>
     <script src="../jss/main.js"></script>
+  <script> /*책 표지 호버 효과*/
+    function changeImage() {
+      document.getElementById('bookImage').src = '../img/XLback.png'; // Replace 'otherImage.png' with the path to the new image
+    }
   
+    function restoreImage() {
+      document.getElementById('bookImage').src = '../img/XL.png'; // Restore the original image path
+    }
+  </script>
 </head>
 <body>
 <header>
