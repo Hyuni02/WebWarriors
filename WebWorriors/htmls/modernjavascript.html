@@ -53,10 +53,18 @@
 
   </style>
   <script src="../jss/details.js"></script>
+  <script src="../jss/main.js"></script>
+  <script> /*책 표지 호버 효과*/
+    function changeImage() {
+      document.getElementById('bookImage').src = '../img/XLback.png'; // Replace 'otherImage.png' with the path to the new image
+    }
+  
+    function restoreImage() {
+      document.getElementById('bookImage').src = '../img/XL.png'; // Restore the original image path
+    }
+  </script>
 </head>
-<body class="notme">
-<script src="../jss/details.js"></script>
-<div id='wrap'>
+<body>
   <header>
     <div align="center">
       <nav align="right" class="login">
@@ -64,36 +72,36 @@
         <a href="./register.html">회원가입</a>
       </nav>
     </div>
-    <!-- Topbar -->
-    <div align="center">
-      <nav class="topbar">
-        <a href="index.html"><img src="../img/logo.png" alt="logo"></a>
-        <a href="#" onclick="alert_noimplement()">eBook</a>
-        <a onmouseover="popup_best()" onmouseleave="closePopup_top()">베스트</a>
-        <div onmouseover="popup_best()" onmouseleave="closePopup_top()" id="popup" style="left: 30%;">
-          <ul>
-            <li>
-              <a href="#" onclick="alert_noimplement()">국내도서</a>
-            </li>
-            <li>
-              <a href="#" onclick="alert_noimplement()">외국도서</a>
-            </li>
-            <li>
-              <a href="#" onclick="alert_noimplement()">eBook</a>
-            </li>
-          </ul>
-        </div>
-        <a href="login.html" onclick="mypage()">마이페이지</a>
-        <a href="servicecenter.html">고객센터</a>
-        <a class="search">
-          <input type="text" id="search" required placeholder="찾고싶은 도서 이름을 검색해 보세요">
-          <button onclick="search(document.getElementById('search').value)"><img src="../img/search.png" alt="search">
-          </button>
-        </a>
-      </nav>
+<!-- Topbar -->
+<div align="center">
+  <nav class="topbar">
+    <a href="index.html"><img src="../img/logo.png" alt="logo"></a>
+    <a href="#" onclick="alert_noimplement()">eBook</a>
+    <a onmouseover="popup_best()" onmouseleave="closePopup_top()">베스트</a>
+    <div onmouseover="popup_best()" onmouseleave="closePopup_top()" id="popup" style="left: 30%;">
+      <ul>
+        <li>
+          <a href="#" onclick="alert_noimplement()">국내도서</a>
+        </li>
+        <li>
+          <a href="#" onclick="alert_noimplement()">외국도서</a>
+        </li>
+        <li>
+          <a href="#" onclick="alert_noimplement()">eBook</a>
+        </li>
+      </ul>
     </div>
-    <script src="../jss/main.js"></script>
-    <script>closePopup_top()</script>
+    <a href="login.html" onclick="mypage()">마이페이지</a>
+    <a href="servicecenter.html">고객센터</a>
+    <a class="search">
+      <input type="text" id="search" required placeholder="찾고싶은 도서 이름을 검색해 보세요">
+      <button onclick="search(document.getElementById('search').value)"><img src="../img/search.png" alt="search">
+      </button>
+    </a>
+  </nav>
+</div>
+</header>
+<div id='wrap'>
   </header>
   <br>
   <br>
@@ -113,8 +121,8 @@
         이창현(지은이) 길벗 캠퍼스 2023-07-13
     </pre>
     <div class="img" ; style="float:left;">
-      <img src="../img/js.png" width="565px" height="725.37px">
-    </div>
+      <img id="bookImage" src="../img/js.png" width="565px" height="725.37px"onmouseover="changeImage()" onmouseout="restoreImage()">
+     </div>
     <div class="information" style="float:left; margin-left: 65px;">
       <br>
       <br>
@@ -123,30 +131,29 @@
         <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;정가 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;36000원</strong>
       </p>
       <br>
-      <br>
+      
       <p>
         <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;판매가 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;34,400원</strong>
       </p>
       <br>
-      <br>
+    
       <p>
         <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;배송료 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;무료</strong>
       </p>
       <br>
-      <br>
+      
       <p>
         <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;수령예상일&nbsp;&nbsp;</strong>
-        <button class="my_btn">위즈 샛별배송</button>
+        <button class="wlss_shipping">위즈 샛별배송</button>
         <br>
-        <strong>
+        <br>
+       
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;지금
-          택배로 주문하면 내일 아침 7시 등교 전 배송<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*(노원구
+          택배로 주문하면 내일 아침 7시 <font style="color:#EF528B;">등교 전 배송</font><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*(노원구
           공릉로 232) 기준
-        </strong>
+        
       </p>
-      <br>
-      <br>
-      <br>
+      
       <form style="display: flex; align-items: center;">
         <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;수량&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<input
           type="number"
@@ -200,7 +207,7 @@
         한줄평(142)</font> |<font size="3"> 모바일 프로그래밍 주간 22위</font>
 
       </div>
-      <br><br>
+      <br><br><br><br>
 
       <div style="float:left; margin-left: 20px;">
 
@@ -210,7 +217,7 @@
         <a href="./login.html">
           <button class="my_btn3">바로구매</button>
         </a>
-        <button class="my_btn4" onclick="openGiftPopup()">선물함</button>
+        <button class="my_btn4" onclick="openGiftPopup()">선물하기</button>
         <div id="giftModal" class="modal" style="top:600px;left: 1300px;">
           <div class="modal-content">
             <span class="close" onclick="closeGiftPopup()">&times;</span>
@@ -290,7 +297,7 @@
         </div>
       </div>
       <button id="image-container-button" onclick="showImages()"
-              style="width: 1139px;height: 100px;margin-left: 160px; text-align: center;">전체 이미지 보기
+              style="width: 1139px;height: 100px;margin-left: 160px; text-align: center;">상세정보 더보기 ▼
       </button>
       <div style="float:left; margin-left:20px; text-align: left;">
         <!-- 별점 선택 폼 -->
@@ -310,7 +317,7 @@
         <br>
         <textarea style="width: 981px;height: 100px;margin-left: 140px;float: left;"
                   placeholder="한줄평을 남겨 주세요.배송 문의나 상품과 관련 없는 글은 상품 페이지에서 노출 제외 처리될 수 있습니다"></textarea>
-        <button style="width:147px;height: 100px;float: left;margin-left: 2px;">등록</button>
+        <button class="my_btn6">등록</button>
         <br>
 
       </div>
@@ -338,11 +345,7 @@
         <img src="../img/score5.PNG">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;위즈 샛별배송으로 구매해서 배송이 진짜 빨랐고 책도 잘 쓰고 있습니다!
         <br>
         <br>
-        <a href="./login.html">
-          <button style="width: 1139px;height: 100px;margin-left: 7px; text-align: center; margin-right:150px">한줄평
-            더보기V
-          </button>
-        </a>
+        
       </div>
 
       <br>
@@ -355,58 +358,7 @@
 
 <script>closePopup()</script>
 </body>
-<footer class="footer2">
-  <ul>
-    <!--로고-->
-    <li>
-      <ul>
-        <li>
-          <div>
-            <img src="../img/logo.png" alt="logo">
-          </div>
-        </li>
-      </ul>
-    </li>
-    <!--about-->
-    <li>
-      <div class="about">
-        <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Feature</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Help</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-        </ul>
-      </div>
-    </li>
-    <!--copyright-->
-    <li>
-      <div class="copyright">
-        <ul type="none">
-          <li>
-            <a>&copy 2023 WLSS. All rights reserved</a>
-          </li>
-        </ul>
-      </div>
-    </li>
-  </ul>
-  <div class="getapp">
-    <ul type="none">
-      <p style="color: white">Get the App</p>
-      <li>
-        <a href="#">
-          <img src="../img/appstore.png" alt="appstore.png">
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <img src="../img/googleplay.png" alt="googleplay">
-        </a>
-      </li>
-    </ul>
-  </div>
-</footer>
+
 </html>
 
 
